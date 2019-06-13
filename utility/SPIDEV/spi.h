@@ -27,8 +27,8 @@
 #include <stdexcept>
 
 #ifndef RF24_SPIDEV_SPEED
-/* 8MHz as default */
-#define RF24_SPIDEV_SPEED 8000000
+/* Lowered to 4Mhz for better support for Adafruit Bluefruit nRF52 SPI */
+#define RF24_SPIDEV_SPEED 4000000
 #endif
 
 /** Specific excpetion for SPI errors */
